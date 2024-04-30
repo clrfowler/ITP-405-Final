@@ -18,7 +18,7 @@ Route::post('/logout', function () {
     Auth::logout();
     return redirect('/');
 })->name('logout');
-Route::delete('/delete-account', [AuthController::class, 'deleteAccount'])->name('delete-account')->middleware('auth');
+Route::delete('/delete-account', [AuthController::class, 'deleteAccount'])->name('delete-account');
 
 
 // Album Routes
