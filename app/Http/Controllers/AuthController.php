@@ -79,6 +79,6 @@ class AuthController extends Controller
         Auth::logout();
 
         // Redirect the user to a page after successful deletion
-        return redirect()->route('/');
+        return redirect('/');
     }
 }
